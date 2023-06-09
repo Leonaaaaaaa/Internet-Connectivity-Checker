@@ -13,5 +13,8 @@ while True:
     log = open("log.txt", "a")
 
     now = datetime.datetime.now()
-    log.write(f"[{now.day}-{now.month}-{now.year} {now.hour}:{now.minute}:{now.second}] internet connection: {check_connectivity()}\n")
+    text = f"[{now.day}-{now.month}-{now.year} {now.hour}:{now.minute}:{now.second}] internet connection: {check_connectivity()}\n"
+
+    print(text)
+    log.write(text)
     time.sleep(60)
