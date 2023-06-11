@@ -30,4 +30,4 @@ while True:
 
     print(text)
     log.write(text)
-    time.sleep(2)
+    time.sleep(30)
